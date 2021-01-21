@@ -1,0 +1,202 @@
+﻿@model ESG.Model.Entities.User
+@{
+    ViewBag.Title = "TeamPage";
+}
+<!-- BANNER WRAP -->
+<div class="banner-wrap game-review">
+    <!-- BANNER -->
+    <div class="banner grid-limit">
+        <h2 class="banner-title">Game Reviews</h2>
+        <p class="banner-sections">
+            <span class="banner-section">Home</span>
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon">
+                <use xlink:href="#svg-arrow"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+            <span class="banner-section">Game Reviews</span>
+        </p>
+    </div>
+    <!-- /BANNER -->
+</div>
+<!-- /BANNER WRAP -->
+<!-- LIVE NEWS WIDGET WRAP -->
+<div class="live-news-widget-wrap">
+    <!-- LIVE NEWS WIDGET -->
+    <div class="live-news-widget grid-limit">
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs left red">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs right blue">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET TITLE WRAP -->
+        <div class="live-news-widget-title-wrap">
+            <img class="live-news-widget-icon" src="~/Content/img/icons/live-news-icon.png" alt="live-news-icon">
+            <p class="live-news-widget-title">Live News</p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TITLE WRAP -->
+        <!-- LIVE NEWS WIDGET TEXT WRAP -->
+        <div id="lineslide-wrap1" class="live-news-widget-text-wrap">
+            <p class="live-news-widget-text"></p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TEXT WRAP -->
+    </div>
+    <!-- /LIVE NEWS WIDGET -->
+</div>
+<!-- /LIVE NEWS WIDGET WRAP -->
+
+@if (Model == null)
+{
+    <div class="container1">
+        <div class="center1">
+
+            <h2>Önce Giriş Yapmalısınız.</h2>
+            
+        </div>
+    </div>
+
+}
+else
+{
+<div class="container1">
+    <div class="center1">
+
+
+        <div class="post-open-text-wrap half">
+            @if (Model.TeamInvitationsID != 0)
+            {
+                <a href="@Url.Action("InviteList", "User")" class="button big blue">
+                    Takım Davetiniz Var
+                    <!-- BUTTON ORNAMENT -->
+                    <div class="button-ornament">
+                        <!-- ARROW ICON -->
+                        <svg class="arrow-icon big">
+                            <use xlink:href="#svg-arrow-big"></use>
+                        </svg>
+                        <!-- /ARROW ICON -->
+                        <!-- CROSS ICON -->
+                        <svg class="cross-icon big">
+                            <use xlink:href="#svg-cross-big"></use>
+                        </svg>
+                        <!-- /CROSS ICON -->
+                    </div>
+                    <!-- /BUTTON ORNAMENT -->
+                </a>
+
+            }
+            else
+            {
+                <a href="#" class="button big red">
+                    Takım Daveti Yok
+                    <!-- BUTTON ORNAMENT -->
+                    <div class="button-ornament">
+                        <!-- ARROW ICON -->
+                        <svg class="arrow-icon big">
+                            <use xlink:href="#svg-arrow-big"></use>
+                        </svg>
+                        <!-- /ARROW ICON -->
+                        <!-- CROSS ICON -->
+                        <svg class="cross-icon big">
+                            <use xlink:href="#svg-cross-big"></use>
+                        </svg>
+                        <!-- /CROSS ICON -->
+                    </div>
+                    <!-- /BUTTON ORNAMENT -->
+                </a>
+            }
+            <!-- POST OPEN TEXT -->
+            <!-- /POST OPEN TEXT -->
+            <!-- POST OPEN TEXT -->
+            @if (Model.TeamID == 0)
+            {
+
+                <a href="@Url.Action("CreateTeam", "Team")" class="button big blue">
+
+                    Takım oluştur
+                    <!-- BUTTON ORNAMENT -->
+                    <div class="button-ornament">
+                        <!-- ARROW ICON -->
+                        <svg class="arrow-icon big">
+                            <use xlink:href="#svg-arrow-big"></use>
+                        </svg>
+                        <!-- /ARROW ICON -->
+                        <!-- CROSS ICON -->
+                        <svg class="cross-icon big">
+                            <use xlink:href="#svg-cross-big"></use>
+                        </svg>
+                        <!-- /CROSS ICON -->
+                    </div>
+                    <!-- /BUTTON ORNAMENT -->
+                </a>
+
+            }
+
+            else
+            {
+
+                <a href="@Url.Action("MyTeam", "Team")" class="button big blue">
+
+                    Takım Sayfası
+                    <!-- BUTTON ORNAMENT -->
+                    <div class="button-ornament">
+                        <!-- ARROW ICON -->
+                        <svg class="arrow-icon big">
+                            <use xlink:href="#svg-arrow-big"></use>
+                        </svg>
+                        <!-- /ARROW ICON -->
+                        <!-- CROSS ICON -->
+                        <svg class="cross-icon big">
+                            <use xlink:href="#svg-cross-big"></use>
+                        </svg>
+                        <!-- /CROSS ICON -->
+                    </div>
+                    <!-- /BUTTON ORNAMENT -->
+                </a>
+
+
+            }
+
+
+
+            <!-- /POST OPEN TEXT -->
+        </div>
+    </div>
+</div>
+
+}
+
+<style>
+    .container1 {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+    }
+
+    .center1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>

@@ -1,0 +1,591 @@
+﻿@model List<ESG.Model.Entities.News>
+@{
+    ViewBag.Title = "News";
+}
+
+<!-- BANNER WRAP -->
+<div class="banner-wrap game-review">
+    <!-- BANNER -->
+    <div class="banner grid-limit">
+        <h2 class="banner-title">Game Reviews</h2>
+        <p class="banner-sections">
+            <span class="banner-section">Home</span>
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon">
+                <use xlink:href="#svg-arrow"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+            <span class="banner-section">Game Reviews</span>
+        </p>
+    </div>
+    <!-- /BANNER -->
+</div>
+<!-- /BANNER WRAP -->
+<!-- LIVE NEWS WIDGET WRAP -->
+<div class="live-news-widget-wrap">
+    <!-- LIVE NEWS WIDGET -->
+    <div class="live-news-widget grid-limit">
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs left red">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs right blue">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET TITLE WRAP -->
+        <div class="live-news-widget-title-wrap">
+            <img class="live-news-widget-icon" src="~/Content/img/icons/live-news-icon.png" alt="live-news-icon">
+            <p class="live-news-widget-title">Live News</p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TITLE WRAP -->
+        <!-- LIVE NEWS WIDGET TEXT WRAP -->
+        <div id="lineslide-wrap1" class="live-news-widget-text-wrap">
+            <p class="live-news-widget-text"></p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TEXT WRAP -->
+    </div>
+    <!-- /LIVE NEWS WIDGET -->
+</div>
+<!-- /LIVE NEWS WIDGET WRAP -->
+<!-- LAYOUT CONTENT 1 -->
+<div class="layout-content-1 layout-item-3-1 grid-limit">
+    <!-- LAYOUT BODY -->
+    <div class="layout-body">
+        <!-- LAYOUT ITEM -->
+        <div class="layout-item">
+            @foreach(var item in Model)
+            {
+            <div class="post-preview landscape big game-review">
+                <!-- POST PREVIEW IMG WRAP -->
+                <a href="post-v2.html">
+                    <div class="post-preview-img-wrap">
+                        <!-- POST PREVIEW IMG -->
+                        <figure class="post-preview-img liquid">
+                            <img src="~/Content/img/posts/16.jpg" alt="post-16">
+                        </figure>
+                        <!-- POST PREVIEW IMG -->
+                        <!-- REVIEW RATING -->
+                        @*<div class="review-rating">
+                            <div id="content-news-rate-9" class="arc"></div>
+                        </div>*@
+                        <!-- /REVIEW RATING -->
+                    </div>
+                </a>
+                <!-- /POST PREVIEW IMG WRAP -->
+                <!-- TAG ORNAMENT -->
+                <a href="news-v2.html" class="tag-ornament">Game Reviews</a>
+                <!-- /TAG ORNAMENT -->
+                <!-- POST PREVIEW TITLE -->
+                <a href="@Url.Action("NewsDetail", "News", new { id = item.NewsID })" class="post-preview-title"><span>@item.NewsTitle</span></a>
+                <!-- POST AUTHOR INFO -->
+                <div class="post-author-info-wrap">
+                    <!-- USER AVATAR -->
+                    <a href="search-results.html">
+                        <figure class="user-avatar tiny liquid">
+                            <img src="~/Content/img/users/04.jpg" alt="user-04">
+                        </figure>
+                    </a>
+                    <!-- /USER AVATAR -->
+                    <p class="post-author-info small light">By <a href="search-results.html" class="post-author">@item.NewsCreatedUser.UserName</a><span class="separator">|</span>@item.NewsDate<span class="separator">|</span><a href="post-v2.html#op-comments" class="post-comment-count">258 Comments</a></p>
+                </div>
+                <!-- /POST AUTHOR INFO -->
+                <!-- POST PREVIEW TEXT -->
+                <p class="post-preview-text">@item.NewsDesc</p>
+            </div>
+            }
+        
+        </div>
+        <!-- /LAYOUT ITEM -->
+        <!-- PAGE NAVIGATION -->
+        <div class="page-navigation red spaced">
+            <!-- CONTROL PREVIOUS -->
+            <div class="slider-control big control-previous">
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon medium">
+                    <use xlink:href="#svg-arrow-medium"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+            </div>
+            <!-- /CONTROL PREVIOUS -->
+            <a href="#" class="page-navigation-item">1</a>
+            <a href="#" class="page-navigation-item active">2</a>
+            <a href="#" class="page-navigation-item">3</a>
+            <a href="#" class="page-navigation-item">...</a>
+            <a href="#" class="page-navigation-item">8</a>
+            <!-- CONTROL PREVIOUS -->
+            <div class="slider-control big control-next">
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon medium">
+                    <use xlink:href="#svg-arrow-medium"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+            </div>
+            <!-- /CONTROL PREVIOUS -->
+        </div>
+        <!-- /PAGE NAVIGATION -->
+    </div>
+    <!-- /LAYOUT BODY -->
+    <!-- LAYOUT SIDEBAR -->
+    <div class="layout-sidebar layout-item gutter-medium">
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap blue">
+                <h2 class="section-title medium">Social Pixel</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- SOCIAL LINKS -->
+            <div class="social-links medium centered">
+                <!-- BUBBLE ORNAMENT -->
+                <a href="#" class="bubble-ornament big fb">
+                    <!-- FACEBOOK ICON -->
+                    <svg class="facebook-icon big">
+                        <use xlink:href="#svg-facebook"></use>
+                    </svg>
+                    <!-- /FACEBOOK ICON -->
+                    <p class="bubble-ornament-text">2560</p>
+                </a>
+                <!-- /BUBBLE ORNAMENT -->
+                <!-- BUBBLE ORNAMENT -->
+                <a href="#" class="bubble-ornament big twt">
+                    <!-- TWITTER ICON -->
+                    <svg class="twitter-icon big">
+                        <use xlink:href="#svg-twitter"></use>
+                    </svg>
+                    <!-- /TWITTER ICON -->
+                    <p class="bubble-ornament-text">1945</p>
+                </a>
+                <!-- /BUBBLE ORNAMENT -->
+                <!-- BUBBLE ORNAMENT -->
+                <a href="#" class="bubble-ornament big insta">
+                    <!-- INSTAGRAM ICON -->
+                    <svg class="instagram-icon big">
+                        <use xlink:href="#svg-instagram"></use>
+                    </svg>
+                    <!-- /INSTAGRAM ICON -->
+                    <p class="bubble-ornament-text">835</p>
+                </a>
+                <!-- /BUBBLE ORNAMENT -->
+                <!-- BUBBLE ORNAMENT -->
+                <a href="#" class="bubble-ornament big twitch">
+                    <!-- TWITCH ICON -->
+                    <svg class="twitch-icon big">
+                        <use xlink:href="#svg-twitch"></use>
+                    </svg>
+                    <!-- /TWITCH ICON -->
+                    <p class="bubble-ornament-text">9632</p>
+                </a>
+                <!-- /BUBBLE ORNAMENT -->
+            </div>
+            <!-- /SOCIAL LINKS -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap blue">
+                <h2 class="section-title medium">Popular Posts</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- POST PREVIEW SHOWCASE -->
+            <div class="post-preview-showcase grid-1col centered gutter-small">
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny gaming-news">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v1.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/01.jpg" alt="post-01">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v1.html" class="post-preview-title">The Clash of Dragons is breaking record sales in USA and Japan</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Dexter</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny game-review">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v2.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/25.jpg" alt="post-25">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- REVIEW RATING -->
+                            <div class="review-rating">
+                                <div id="sidebar-rate-1" class="arc tiny"></div>
+                            </div>
+                            <!-- /REVIEW RATING -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v2.html" class="post-preview-title">"Legend of Kenshii II" is a bit green for now</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Vellatrix</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny movie-news">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v3.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/12.jpg" alt="post-12">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- RATING ORNAMENT -->
+                            <div class="rating-ornament">
+                                <!-- RATING ORNAMENT ITEM -->
+                                <div class="rating-ornament-item">
+                                    <!-- RATING ORNAMENT ICON -->
+                                    <svg class="rating-ornament-icon">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </div>
+                                <!-- /RATING ORNAMENT ITEM -->
+                                <!-- RATING ORNAMENT ITEM -->
+                                <div class="rating-ornament-item">
+                                    <!-- RATING ORNAMENT ICON -->
+                                    <svg class="rating-ornament-icon">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </div>
+                                <!-- /RATING ORNAMENT ITEM -->
+                                <!-- RATING ORNAMENT ITEM -->
+                                <div class="rating-ornament-item">
+                                    <!-- RATING ORNAMENT ICON -->
+                                    <svg class="rating-ornament-icon">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </div>
+                                <!-- /RATING ORNAMENT ITEM -->
+                                <!-- RATING ORNAMENT ITEM -->
+                                <div class="rating-ornament-item">
+                                    <!-- RATING ORNAMENT ICON -->
+                                    <svg class="rating-ornament-icon empty">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </div>
+                                <!-- /RATING ORNAMENT ITEM -->
+                                <!-- RATING ORNAMENT ITEM -->
+                                <div class="rating-ornament-item">
+                                    <!-- RATING ORNAMENT ICON -->
+                                    <svg class="rating-ornament-icon empty">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </div>
+                                <!-- /RATING ORNAMENT ITEM -->
+                            </div>
+                            <!-- /RATING ORNAMENT -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v3.html" class="post-preview-title">We reviewed the "Guardians of the Universe" movie</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Faye V.</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny gaming-news">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v1.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/17.jpg" alt="post-17">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v1.html" class="post-preview-title">Jazzstar announced that the GTE5 for PC is delayed</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Dexter</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+            </div>
+            <!-- /POST PREVIEW SHOWCASE -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap red">
+                <h2 class="section-title medium">Latest Reviews</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- POST PREVIEW SHOWCASE -->
+            <div class="post-preview-showcase grid-1col centered gutter-small">
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny game-review">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v2.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/16.jpg" alt="post-16">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- REVIEW RATING -->
+                            <div class="review-rating">
+                                <div id="sidebar-rate-2" class="arc tiny"></div>
+                            </div>
+                            <!-- /REVIEW RATING -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v2.html" class="post-preview-title">We reviewed the new Magimons game</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Vellatrix</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny game-review">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v2.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/25.jpg" alt="post-25">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- REVIEW RATING -->
+                            <div class="review-rating">
+                                <div id="sidebar-rate-3" class="arc tiny"></div>
+                            </div>
+                            <!-- /REVIEW RATING -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v2.html" class="post-preview-title">"Legend of Kenshii II" is a bit green for now</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Vellatrix</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny game-review">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v2.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/05.jpg" alt="post-05">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- REVIEW RATING -->
+                            <div class="review-rating">
+                                <div id="sidebar-rate-4" class="arc tiny"></div>
+                            </div>
+                            <!-- /REVIEW RATING -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v2.html" class="post-preview-title">We reviewed the new and exciting fantasy game "Olympus"</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Morgana</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+                <!-- POST PREVIEW -->
+                <div class="post-preview tiny game-review">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-v2.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/08.jpg" alt="post-08">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- REVIEW RATING -->
+                            <div class="review-rating">
+                                <div id="sidebar-rate-5" class="arc tiny"></div>
+                            </div>
+                            <!-- /REVIEW RATING -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                    <!-- POST PREVIEW TITLE -->
+                    <a href="post-v2.html" class="post-preview-title">The new Mecha Cyborg game is breaking barriers</a>
+                    <!-- POST AUTHOR INFO -->
+                    <div class="post-author-info-wrap">
+                        <p class="post-author-info small light">By <a href="search-results.html" class="post-author">Vellatrix</a><span class="separator">|</span>Dec 15th, 2018</p>
+                    </div>
+                    <!-- /POST AUTHOR INFO -->
+                </div>
+                <!-- /POST PREVIEW -->
+            </div>
+            <!-- /POST PREVIEW SHOWCASE -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- PROMO ADVERT -->
+            <div class="promo-advert">
+                <a href="#">
+                    <!-- PROMO ADVERT IMG -->
+                    <img class="promo-advert-img" src="~/Content/img/banners/promo-ad-1.jpg" alt="promo-ad-1">
+                    <!-- /PROMO ADVERT IMG -->
+                </a>
+            </div>
+            <!-- /PROMO ADVERT -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap cyan">
+                <h2 class="section-title medium">Featured Video</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- POST PREVIEW SHOWCASE -->
+            <div class="post-preview-showcase grid-1col centered">
+                <!-- POST PREVIEW -->
+                <div class="post-preview video">
+                    <!-- POST PREVIEW IMG WRAP -->
+                    <a href="post-video.html">
+                        <div class="post-preview-img-wrap">
+                            <!-- POST PREVIEW IMG -->
+                            <figure class="post-preview-img liquid">
+                                <img src="~/Content/img/posts/03.jpg" alt="post-03">
+                            </figure>
+                            <!-- /POST PREVIEW IMG -->
+                            <!-- POST PREVIEW OVERLAY -->
+                            <div class="post-preview-overlay">
+                                <!-- PLAY BUTTON -->
+                                <div class="play-button">
+                                    <!-- PLAY BUTTON ICON -->
+                                    <svg class="play-button-icon">
+                                        <use xlink:href="#svg-play"></use>
+                                    </svg>
+                                    <!-- /PLAY BUTTON ICON -->
+                                </div>
+                                <!-- /PLAY BUTTON -->
+                                <!-- POST PREVIEW OVERLAY INFO -->
+                                <div class="post-preview-overlay-info">
+                                    <!-- POST PREVIEW TITLE -->
+                                    <p class="post-preview-title">"The Sandbenders II" break the bad sequel spell with a...</p>
+                                    <!-- POST PREVIEW TEXT -->
+                                    <p class="post-preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                </div>
+                                <!-- /POST PREVIEW OVERLAY INFO -->
+                            </div>
+                            <!-- /POST PREVIEW OVERLAY -->
+                        </div>
+                    </a>
+                    <!-- /POST PREVIEW IMG WRAP -->
+                </div>
+                <!-- /POST PREVIEW -->
+            </div>
+            <!-- /POST PREVIEW SHOWCASE -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap blue">
+                <h2 class="section-title medium">Pixel Tags</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- TAG LIST -->
+            <div class="tag-list">
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Gaming</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Video Reviews</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Previews</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Movie Reviews</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Movie News</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Critic</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Ratings</a>
+                <!-- /TAG ITEM -->
+                <!-- TAG ITEM -->
+                <a href="search-results.html" class="tag-item">Funtendo</a>
+                <!-- /TAG ITEM -->
+            </div>
+            <!-- /TAG LIST -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap red">
+                <h2 class="section-title medium">Instagram Widget</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- PHOTO LIST -->
+            <div class="photo-list"></div>
+            <!-- /PHOTO LIST -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+    </div>
+    <!-- /LAYOUT SIDEBAR -->
+</div>
+<!-- /LAYOUT CONTENT 1 -->

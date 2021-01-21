@@ -1,0 +1,2906 @@
+﻿@model ESG.Model.Entities.User
+@{
+    ViewBag.Title = "UserDetail";
+}
+
+<!-- BANNER WRAP -->
+<div class="banner-wrap e-sport">
+    <!-- BANNER -->
+    <div class="banner grid-limit">
+        <h2 class="banner-title">@Model.NickName</h2>
+        <p class="banner-sections">
+            <span class="banner-section">eSports</span>
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon">
+                <use xlink:href="#svg-arrow"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+            <span class="banner-section">Teams</span>
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon">
+                <use xlink:href="#svg-arrow"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+            <span class="banner-section">The Lone Wolves</span>
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon">
+                <use xlink:href="#svg-arrow"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+            <span class="banner-section">@Model.UserTeam.TeamName</span>
+        </p>
+    </div>
+    <!-- /BANNER -->
+</div>
+<!-- /BANNER WRAP -->
+<!-- LIVE NEWS WIDGET WRAP -->
+<div class="live-news-widget-wrap">
+    <!-- LIVE NEWS WIDGET -->
+    <div class="live-news-widget grid-limit">
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs left red">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs right blue">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET TITLE WRAP -->
+        <div class="live-news-widget-title-wrap">
+            <img class="live-news-widget-icon" src="~/Content/img/icons/live-news-icon.png" alt="live-news-icon">
+            <p class="live-news-widget-title">Live News</p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TITLE WRAP -->
+        <!-- LIVE NEWS WIDGET TEXT WRAP -->
+        <div id="lineslide-wrap1" class="live-news-widget-text-wrap">
+            <p class="live-news-widget-text"></p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TEXT WRAP -->
+    </div>
+    <!-- /LIVE NEWS WIDGET -->
+</div>
+<!-- /LIVE NEWS WIDGET WRAP -->
+<!-- CAROUSEL MATCH RESULT WRAP -->
+<div id="ew1-cmrf-controls" class="carousel-match-result-wrap full">
+    <!-- MATCH SELECTOR -->
+    <div class="match-selector">
+        <!-- DROPDOWN SIMPLE WRAP -->
+        <div class="dropdown-simple-wrap">
+            <!-- DP CURRENT OPTION -->
+            <div id="ew1-match-selector-dropdown-trigger" class="dp-current-option">
+                <!-- DP CURRENT OPTION VALUE -->
+                <div id="ew1-match-selector-dropdown-option-value" class="dp-current-option-value">
+                    <p class="dp-option-text">League of Heroes<br>Tournament 18'</p>
+                </div>
+                <!-- /DP CURRENT OPTION VALUE -->
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon">
+                    <use xlink:href="#svg-arrow"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+            </div>
+            <!-- /DP CURRENT OPTION -->
+            <!-- DP OPTIONS -->
+            <div id="ew1-match-selector-dropdown" class="dp-options">
+                <!-- DP OPTION -->
+                <div class="dp-option">
+                    <p class="dp-option-text">League of Heroes<br>Tournament 18'</p>
+                </div>
+                <!-- /DP OPTION -->
+                <!-- DP OPTION -->
+                <div class="dp-option">
+                    <p class="dp-option-text">Striker GO<br>League Finals 18'</p>
+                </div>
+                <!-- /DP OPTION -->
+                <!-- DP OPTION -->
+                <div class="dp-option">
+                    <p class="dp-option-text">Heroestone<br>League 18'</p>
+                </div>
+                <!-- /DP OPTION -->
+                <!-- DP OPTION -->
+                <div class="dp-option">
+                    <p class="dp-option-text">Xenowatch<br>Tournament 18'</p>
+                </div>
+                <!-- /DP OPTION -->
+            </div>
+            <!-- /DP OPTIONS -->
+        </div>
+        <!-- /DROPDOWN SIMPLE WRAP -->
+        <!-- CONTROL PREVIOUS -->
+        <div class="control-previous">
+            <!-- ARROW ICON -->
+            <svg class="arrow-icon medium">
+                <use xlink:href="#svg-arrow-medium"></use>
+            </svg>
+            <!-- /ARROW ICON -->
+        </div>
+        <!-- /CONTROL PREVIOUS -->
+    </div>
+    <!-- /MATCH SELECTOR -->
+    <!-- CAROUSEL MATCH RESULT -->
+    <div id="ew1-cmrf-slider" class="carousel-match-result">
+        <!-- CAROUSEL MATCH RESULT ITEMS -->
+        <div class="carousel-match-result-items">
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result hoverable">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">TLW</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">USA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">2</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">Final</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">RRH</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SOA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">4</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime light">04/13</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ACTIONS -->
+                    <div class="widget-match-result-actions">
+                        <a href="esports-match-overview-v1.html" class="widget-match-result-action">
+                            <!-- BARS ICON -->
+                            <svg class="bars-icon">
+                                <use xlink:href="#svg-bars"></use>
+                            </svg>
+                            <!-- /BARS ICON -->
+                            Stats
+                        </a>
+                        <p class="widget-match-result-action popup-watch-video-trigger">
+                            <!-- PLAY BUTTON ICON -->
+                            <svg class="play-button-icon tiny">
+                                <use xlink:href="#svg-play"></use>
+                            </svg>
+                            <!-- /PLAY BUTTON ICON -->
+                            Replay
+                        </p>
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ACTIONS -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/03.png" alt="logo-03">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">LTR</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SPA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">2</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime live">Live</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/04.png" alt="logo-04">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">SBT</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">RUS</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">0</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">25:46</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result hoverable">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">RRH</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SOA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">3</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">Final</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/05.png" alt="logo-05">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">CPK</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">JAP</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">2</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime light">04/14</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ACTIONS -->
+                    <div class="widget-match-result-actions">
+                        <a href="esports-match-overview-v1.html" class="widget-match-result-action">
+                            <!-- BARS ICON -->
+                            <svg class="bars-icon">
+                                <use xlink:href="#svg-bars"></use>
+                            </svg>
+                            <!-- /BARS ICON -->
+                            Stats
+                        </a>
+                        <p class="widget-match-result-action popup-watch-video-trigger">
+                            <!-- PLAY BUTTON ICON -->
+                            <svg class="play-button-icon tiny">
+                                <use xlink:href="#svg-play"></use>
+                            </svg>
+                            <!-- /PLAY BUTTON ICON -->
+                            Replay
+                        </p>
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ACTIONS -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/03.png" alt="logo-03">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">LTR</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SPA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/24</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">TLW</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">USA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime light">10PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/04.png" alt="logo-04">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">SBT</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">RUS</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/25</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">RRH</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SOA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime light">9PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/05.png" alt="logo-05">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">CPK</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">JAP</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/25</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">TLW</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">USA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">8PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/03.png" alt="logo-03">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">LTR</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SPA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/26</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">RRH</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SOA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">10PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">TLW</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">USA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/27</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">RRH</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">SOA</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">10PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+            <!-- CAROUSEL MATCH RESULT ITEM -->
+            <div class="carousel-match-result-item">
+                <!-- WIDGET MATCH RESULT -->
+                <div class="widget-match-result">
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/04.png" alt="logo-04">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">SBT</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">RUS</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">06/28</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                    <!-- WIDGET MATCH RESULT ITEM -->
+                    <div class="widget-match-result-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo small" src="~/Content/img/teams/logos/05.png" alt="logo-05">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">CPK</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">JAP</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- MATCH SCORE -->
+                        <p class="match-score">-</p>
+                        <!-- /MATCH SCORE -->
+                        <!-- MATCH DATETIME -->
+                        <p class="match-datetime">8PM</p>
+                        <!-- /MATCH DATETIME -->
+                    </div>
+                    <!-- /WIDGET MATCH RESULT ITEM -->
+                </div>
+                <!-- /WIDGET MATCH RESULT -->
+            </div>
+            <!-- /CAROUSEL MATCH RESULT ITEM -->
+        </div>
+        <!-- /CAROUSEL MATCH RESULT ITEMS -->
+    </div>
+    <!-- /CAROUSEL MATCH RESULT -->
+    <!-- CONTROL NEXT -->
+    <div class="control-next">
+        <!-- ARROW ICON -->
+        <svg class="arrow-icon medium">
+            <use xlink:href="#svg-arrow-medium"></use>
+        </svg>
+        <!-- /ARROW ICON -->
+    </div>
+    <!-- /CONTROL NEXT -->
+</div>
+<!-- /CAROUSEL MATCH RESULT WRAP -->
+<!-- LAYOUT CONTENT FULL -->
+<div class="layout-content-full v2 grid-limit layout-item gutter-big">
+    <!-- WIDGET ITEM -->
+    <div class="widget-item">
+        <!-- SECTION TITLE WRAP -->
+        <div class="section-title-wrap violet">
+            <h2 class="section-title medium">Player Overview</h2>
+            <div class="section-title-separator"></div>
+        </div>
+        <!-- /SECTION TITLE WRAP -->
+        <!-- WIDGET PLAYER OVERVIEW -->
+        <div class="widget-player-overview">
+            <!-- PLAYER OVERVIEW -->
+            <div class="player-overview">
+                <!-- PLAYER OVERVIEW IMG WRAP -->
+                <div class="player-overview-img-wrap">
+                    <!-- PLAYER OVERVIEW IMG -->
+                    <img class="player-overview-img" src="~/Content/img/teams/player-photo.png" alt="player-photo">
+                    <!-- /PLAYER OVERVIEW IMG -->
+                </div>
+                <!-- /PLAYER OVERVIEW IMG WRAP -->
+                <!-- OVERVIEW INFO WRAP -->
+                <div class="overview-info-wrap">
+                    <!-- OVERVIEW INFO -->
+                    <div class="overview-info">
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Nickname</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">[@Model.UserTeam.TeamTag]@Model.NickName</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Team</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text centered">
+                                <!-- TEAM LOGO -->
+                                <img class="team-logo" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                                <!-- /TEAM LOGO -->
+                                @Model.UserTeam.TeamName
+                            </p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Real Name</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">@Model.UserName @Model.UserLastName</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                    </div>
+                    <!-- /OVERVIEW INFO -->
+                    <!-- OVERVIEW INFO -->
+                    <div class="overview-info">
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Games Played</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">94 games</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Games Won</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">82 Victories</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Games Lost</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">12 Losses</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                    </div>
+                    <!-- /OVERVIEW INFO -->
+                    <!-- OVERVIEW INFO -->
+                    <div class="overview-info">
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">Tournaments</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">24</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- OVERVIEW INFO ITEM TITLE -->
+                            <p class="overview-info-item-title">MVP's Awarded</p>
+                            <!-- /OVERVIEW INFO ITEM TITLE -->
+                            <!-- OVERVIEW INFO ITEM TEXT -->
+                            <p class="overview-info-item-text">37</p>
+                            <!-- /OVERVIEW INFO ITEM TEXT -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                        <!-- OVERVIEW INFO ITEM -->
+                        <div class="overview-info-item">
+                            <!-- SOCIAL LINKS -->
+                            <div class="social-links">
+                                <!-- BUBBLE ORNAMENT -->
+                                <a href="#" class="bubble-ornament fb">
+                                    <!-- FACEBOOK ICON -->
+                                    <svg class="facebook-icon">
+                                        <use xlink:href="#svg-facebook"></use>
+                                    </svg>
+                                    <!-- /FACEBOOK ICON -->
+                                </a>
+                                <!-- /BUBBLE ORNAMENT -->
+                                <!-- BUBBLE ORNAMENT -->
+                                <a href="#" class="bubble-ornament twt">
+                                    <!-- TWITTER ICON -->
+                                    <svg class="twitter-icon">
+                                        <use xlink:href="#svg-twitter"></use>
+                                    </svg>
+                                    <!-- /TWITTER ICON -->
+                                </a>
+                                <!-- /BUBBLE ORNAMENT -->
+                                <!-- BUBBLE ORNAMENT -->
+                                <a href="#" class="bubble-ornament twitch">
+                                    <!-- TWITCH ICON -->
+                                    <svg class="twitch-icon">
+                                        <use xlink:href="#svg-twitch"></use>
+                                    </svg>
+                                    <!-- /TWITCH ICON -->
+                                </a>
+                                <!-- /BUBBLE ORNAMENT -->
+                            </div>
+                            <!-- /SOCIAL LINKS -->
+                        </div>
+                        <!-- /OVERVIEW INFO ITEM -->
+                    </div>
+                    <!-- /OVERVIEW INFO -->
+                    <!-- STATS INFO -->
+                    <div class="stats-info">
+                        <!-- STATS INFO ITEM -->
+                        <div class="stats-info-item">
+                            <!-- STATS INFO ITEM VALUE -->
+                            <p class="stats-info-item-value">78.43<span class="percent">%</span></p>
+                            <!-- /STATS INFO ITEM VALUE -->
+                            <!-- STATS INFO ITEM DESCRIPTION -->
+                            <div class="stats-info-item-description">
+                                <!-- STATS INFO ITEM DESCRIPTION TITLE -->
+                                <p class="stats-info-item-description-title">Win Rate</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TITLE -->
+                                <!-- STATS INFO ITEM DESCRIPTION TEXT -->
+                                <p class="stats-info-item-description-text">Competitive</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TEXT -->
+                            </div>
+                            <!-- /STATS INFO ITEM DESCRIPTION -->
+                        </div>
+                        <!-- /STATS INFO ITEM -->
+                        <!-- STATS INFO ITEM -->
+                        <div class="stats-info-item">
+                            <!-- STATS INFO ITEM VALUE -->
+                            <p class="stats-info-item-value"><span class="highlight">90</span> / <span class="highlight">30</span> / <span class="highlight">6</span></p>
+                            <!-- /STATS INFO ITEM VALUE -->
+                            <!-- STATS INFO ITEM DESCRIPTION -->
+                            <div class="stats-info-item-description">
+                                <!-- STATS INFO ITEM DESCRIPTION TITLE -->
+                                <p class="stats-info-item-description-title">Record</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TITLE -->
+                                <!-- STATS INFO ITEM DESCRIPTION TEXT -->
+                                <p class="stats-info-item-description-text">Won/Lost/Draw</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TEXT -->
+                            </div>
+                            <!-- /STATS INFO ITEM DESCRIPTION -->
+                        </div>
+                        <!-- /STATS INFO ITEM -->
+                        <!-- STATS INFO ITEM -->
+                        <div class="stats-info-item">
+                            <!-- STATS INFO ITEM VALUE -->
+                            <p class="stats-info-item-value">4790</p>
+                            <!-- /STATS INFO ITEM VALUE -->
+                            <!-- STATS INFO ITEM DESCRIPTION -->
+                            <div class="stats-info-item-description">
+                                <!-- STATS INFO ITEM DESCRIPTION TITLE -->
+                                <p class="stats-info-item-description-title">Skill Rating</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TITLE -->
+                                <!-- STATS INFO ITEM DESCRIPTION TEXT -->
+                                <p class="stats-info-item-description-text">Competitive</p>
+                                <!-- /STATS INFO ITEM DESCRIPTION TEXT -->
+                            </div>
+                            <!-- /STATS INFO ITEM DESCRIPTION -->
+                        </div>
+                        <!-- /STATS INFO ITEM -->
+                    </div>
+                    <!-- /STATS INFO -->
+                </div>
+                <!-- /OVERVIEW INFO WRAP -->
+            </div>
+            <!-- /PLAYER OVERVIEW -->
+        </div>
+        <!-- /WIDGET PLAYER OVERVIEW -->
+    </div>
+    <!-- /WIDGET ITEM -->
+    <!-- WIDGET ITEM -->
+    <div class="widget-item">
+        <!-- SECTION TITLE WRAP -->
+        <div class="section-title-wrap violet">
+            <h2 class="section-title medium">Player Roles Stats</h2>
+            <div class="section-title-separator"></div>
+        </div>
+        <!-- /SECTION TITLE WRAP -->
+        <!-- GRID 4 COL -->
+        <div class="grid-4col centered grid-limit gutter-big" style="margin-bottom: 40px;">
+            <!-- WIDGET COMBINED STAT -->
+            <div class="widget-combined-stat">
+                <!-- ARC RATE WRAP -->
+                <div class="arc-rate-wrap">
+                    <!-- ARC RATE -->
+                    <div id="ew3-arc-rate-01" class="arc rate negative"></div>
+                    <!-- /ARC RATE -->
+                    <!-- BULLET ICON -->
+                    <svg class="arc-rate-icon bullet-icon big">
+                        <use xlink:href="#svg-bullet-big"></use>
+                    </svg>
+                    <!-- /BULLET ICON -->
+                    <!-- ARC RATE STAT -->
+                    <p class="arc-rate-stat">Offense</p>
+                    <!-- /ARC RATE STAT -->
+                    <!-- ARC RATE INFO -->
+                    <p class="arc-rate-info">Games Played</p>
+                    <!-- /ARC RATE INFO -->
+                </div>
+                <!-- /ARC RATE WRAP -->
+                <!-- PROGRESS BAR -->
+                <div id="ew3-pgb-large-01" class="progress-bar large">
+                    <p class="progress-bar-text"><span id="ew3-pgb-large-01-text" class="pg-text"></span> Win Rate</p>
+                </div>
+                <!-- /PROGRESS BAR -->
+            </div>
+            <!-- /WIDGET COMBINED STAT -->
+            <!-- WIDGET COMBINED STAT -->
+            <div class="widget-combined-stat">
+                <!-- ARC RATE WRAP -->
+                <div class="arc-rate-wrap">
+                    <!-- ARC RATE -->
+                    <div id="ew3-arc-rate-02" class="arc rate negative"></div>
+                    <!-- /ARC RATE -->
+                    <!-- TOWER ICON -->
+                    <svg class="arc-rate-icon tower-icon big">
+                        <use xlink:href="#svg-tower-big"></use>
+                    </svg>
+                    <!-- /TOWER ICON -->
+                    <!-- ARC RATE STAT -->
+                    <p class="arc-rate-stat">Defense</p>
+                    <!-- /ARC RATE STAT -->
+                    <!-- ARC RATE INFO -->
+                    <p class="arc-rate-info">Games Played</p>
+                    <!-- /ARC RATE INFO -->
+                </div>
+                <!-- /ARC RATE WRAP -->
+                <!-- PROGRESS BAR -->
+                <div id="ew3-pgb-large-02" class="progress-bar large">
+                    <p class="progress-bar-text"><span id="ew3-pgb-large-02-text" class="pg-text"></span> Win Rate</p>
+                </div>
+                <!-- /PROGRESS BAR -->
+            </div>
+            <!-- /WIDGET COMBINED STAT -->
+            <!-- WIDGET COMBINED STAT -->
+            <div class="widget-combined-stat">
+                <!-- ARC RATE WRAP -->
+                <div class="arc-rate-wrap">
+                    <!-- ARC RATE -->
+                    <div id="ew3-arc-rate-03" class="arc rate negative"></div>
+                    <!-- /ARC RATE -->
+                    <!-- SHIELD ICON -->
+                    <svg class="arc-rate-icon shield-icon big">
+                        <use xlink:href="#svg-shield-big"></use>
+                    </svg>
+                    <!-- /SHIELD ICON -->
+                    <!-- ARC RATE STAT -->
+                    <p class="arc-rate-stat">Tank</p>
+                    <!-- /ARC RATE STAT -->
+                    <!-- ARC RATE INFO -->
+                    <p class="arc-rate-info">Games Played</p>
+                    <!-- /ARC RATE INFO -->
+                </div>
+                <!-- /ARC RATE WRAP -->
+                <!-- PROGRESS BAR -->
+                <div id="ew3-pgb-large-03" class="progress-bar large">
+                    <p class="progress-bar-text"><span id="ew3-pgb-large-03-text" class="pg-text"></span> Win Rate</p>
+                </div>
+                <!-- /PROGRESS BAR -->
+            </div>
+            <!-- /WIDGET COMBINED STAT -->
+            <!-- WIDGET COMBINED STAT -->
+            <div class="widget-combined-stat">
+                <!-- ARC RATE WRAP -->
+                <div class="arc-rate-wrap">
+                    <!-- ARC RATE -->
+                    <div id="ew3-arc-rate-04" class="arc rate negative"></div>
+                    <!-- /ARC RATE -->
+                    <!-- PLUS ICON -->
+                    <svg class="arc-rate-icon plus-icon big">
+                        <use xlink:href="#svg-plus-big"></use>
+                    </svg>
+                    <!-- /PLUS ICON -->
+                    <!-- ARC RATE STAT -->
+                    <p class="arc-rate-stat">Support</p>
+                    <!-- /ARC RATE STAT -->
+                    <!-- ARC RATE INFO -->
+                    <p class="arc-rate-info">Games Played</p>
+                    <!-- /ARC RATE INFO -->
+                </div>
+                <!-- /ARC RATE WRAP -->
+                <!-- PROGRESS BAR -->
+                <div id="ew3-pgb-large-04" class="progress-bar large">
+                    <p class="progress-bar-text"><span id="ew3-pgb-large-04-text" class="pg-text"></span> Win Rate</p>
+                </div>
+                <!-- /PROGRESS BAR -->
+            </div>
+            <!-- /WIDGET COMBINED STAT -->
+        </div>
+        <!-- /GRID 4 COL -->
+    </div>
+    <!-- /WIDGET ITEM -->
+</div>
+<!-- /LAYOUT CONTENT FULL -->
+<!-- LAYOUT CONTENT 1 -->
+<div class="layout-content-1 layout-item-3-1 grid-limit no-padding-bottom">
+    <!-- LAYOUT BODY -->
+    <div class="layout-body layout-item gutter-big">
+        <!-- WIDGET ITEM -->
+        <div class="widget-item">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet small-space">
+                <h2 class="section-title medium">Career Stats</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- WIDGET MATCH BOX -->
+            <div class="widget-match-box">
+                <!-- WIDGET SIMPLE STATS -->
+                <div class="widget-simple-stats v2">
+                    <!-- WIDGET SIMPLE STAT -->
+                    <div class="widget-simple-stat half">
+                        <!-- WIDGET SIMPLE STAT HEADER -->
+                        <div class="widget-simple-stat-header">
+                            <p class="widget-simple-stat-header-title">This Year</p>
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT HEADER -->
+                        <!-- WIDGET SIMPLE STAT ROWS -->
+                        <div class="widget-simple-stat-rows">
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Played</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">8</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Won</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">7</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Lost</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">1</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Win Rate</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">92.6%</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Inflicted</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">42.546</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Received</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">31.369</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Game MVP's</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">1</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Most Played Hero</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- TEAM INFO WRAP -->
+                                <div class="team-info-wrap small inverted">
+                                    <!-- HEXAGON -->
+                                    <div class="hexagon hexagon-wrap small red">
+                                        <!-- HEXAGON IN1 -->
+                                        <div class="hexagon-in1">
+                                            <!-- HEXAGON IN2 -->
+                                            <div class="hexagon-in2 hexagon-wrap">
+                                                <!-- HEXAGON -->
+                                                <div class="hexagon inner-hexagon">
+                                                    <!-- HEXAGON IN1 -->
+                                                    <div class="hexagon-in1">
+                                                        <!-- HEXAGON IN2 -->
+                                                        <div class="hexagon-in2 hexagon-area liquid">
+                                                            <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                        </div>
+                                                        <!-- HEXAGON IN2 -->
+                                                    </div>
+                                                    <!-- /HEXAGON IN1 -->
+                                                </div>
+                                                <!-- /HEXAGON -->
+                                            </div>
+                                            <!-- HEXAGON IN2 -->
+                                        </div>
+                                        <!-- /HEXAGON IN1 -->
+                                    </div>
+                                    <!-- /HEXAGON -->
+                                    <!-- TEAM INFO -->
+                                    <div class="team-info">
+                                        <p class="team-name">Galium</p>
+                                    </div>
+                                    <!-- /TEAM INFO -->
+                                </div>
+                                <!-- /TEAM INFO WRAP -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT ROWS -->
+                    </div>
+                    <!-- /WIDGET SIMPLE STAT -->
+                    <!-- WIDGET SIMPLE STAT -->
+                    <div class="widget-simple-stat half">
+                        <!-- WIDGET SIMPLE STAT HEADER -->
+                        <div class="widget-simple-stat-header">
+                            <p class="widget-simple-stat-header-title">Lifetime</p>
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT HEADER -->
+                        <!-- WIDGET SIMPLE STAT ROWS -->
+                        <div class="widget-simple-stat-rows">
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Played</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">94</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Won</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">82</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Games Lost</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">12</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Win Rate</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">78.43%</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Inflicted</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">195.670</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Received</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">160.448</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Game MVP's</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">37</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Most Played Hero</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- TEAM INFO WRAP -->
+                                <div class="team-info-wrap small inverted">
+                                    <!-- HEXAGON -->
+                                    <div class="hexagon hexagon-wrap small cyan">
+                                        <!-- HEXAGON IN1 -->
+                                        <div class="hexagon-in1">
+                                            <!-- HEXAGON IN2 -->
+                                            <div class="hexagon-in2 hexagon-wrap">
+                                                <!-- HEXAGON -->
+                                                <div class="hexagon inner-hexagon">
+                                                    <!-- HEXAGON IN1 -->
+                                                    <div class="hexagon-in1">
+                                                        <!-- HEXAGON IN2 -->
+                                                        <div class="hexagon-in2 hexagon-area liquid">
+                                                            <img src="~/Content/img/characters/11.png" alt="character-11">
+                                                        </div>
+                                                        <!-- HEXAGON IN2 -->
+                                                    </div>
+                                                    <!-- /HEXAGON IN1 -->
+                                                </div>
+                                                <!-- /HEXAGON -->
+                                            </div>
+                                            <!-- HEXAGON IN2 -->
+                                        </div>
+                                        <!-- /HEXAGON IN1 -->
+                                    </div>
+                                    <!-- /HEXAGON -->
+                                    <!-- TEAM INFO -->
+                                    <div class="team-info">
+                                        <p class="team-name">Luria</p>
+                                    </div>
+                                    <!-- /TEAM INFO -->
+                                </div>
+                                <!-- /TEAM INFO WRAP -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT ROWS -->
+                    </div>
+                    <!-- /WIDGET SIMPLE STAT -->
+                </div>
+                <!-- /WIDGET SIMPLE STATS -->
+            </div>
+            <!-- /WIDGET MATCH BOX -->
+        </div>
+        <!-- /WIDGET ITEM -->
+        <!-- WIDGET ITEM -->
+        <div class="widget-item">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet">
+                <h2 class="section-title medium">Most Played Heroes</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- TABLE -->
+            <div class="table lineups most-played">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header big bordered colored">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero / Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Time Played</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Record</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Medals</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">On Fire</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Healing</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row big">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap medium">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap cyan">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/11.png" alt="character-11">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Luria</p>
+                                    <p class="team-country">Support</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">09:00:00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder"><span class="highlight">33</span> / <span class="highlight">8</span> / <span class="highlight">2</span></p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">3.17</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item ew2-lineups-tooltip" data-title="2.65">
+                            <p class="table-text bolder">
+                                <!-- PLUS ICON -->
+                                <svg class="plus-icon rate-up">
+                                    <use xlink:href="#svg-plus-big"></use>
+                                </svg>
+                                <!-- /PLUS ICON -->
+                                63.33%
+                            </p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">18.04%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">15.662</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+            <!-- TABLE -->
+            <div class="table lineups most-played">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header big bordered colored">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero / Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Time Played</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Record</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Medals</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">On Fire</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Damage</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row big">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap medium">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap red">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Galium</p>
+                                    <p class="team-country">Offense</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">07:23:00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder"><span class="highlight">30</span> / <span class="highlight">6</span></p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">3.08</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">85.50%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">22.90%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">14.307</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+            <!-- TABLE -->
+            <div class="table lineups most-played">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header big bordered colored">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero / Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Time Played</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Record</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Medals</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">On Fire</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Healing</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row big">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap medium">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap cyan">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/12.png" alt="character-12">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Duvida</p>
+                                    <p class="team-country">Support</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">04:06:00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder"><span class="highlight">15</span> / <span class="highlight">5</span> / <span class="highlight">1</span></p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">3.53</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">42.20%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item ew2-lineups-tooltip" data-title="2.50">
+                            <p class="table-text bolder">
+                                <!-- MINUS CC ICON -->
+                                <svg class="minus-cc-icon rate-down">
+                                    <use xlink:href="#svg-minus-cc"></use>
+                                </svg>
+                                <!-- /MINUS CC ICON -->
+                                20.03%
+                            </p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">17.799</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+            <!-- TABLE -->
+            <div class="table lineups most-played">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header big bordered colored">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero / Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Time Played</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Record</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Medals</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">On Fire</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Damage</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row big">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap medium">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap blue">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/07.png" alt="character-07">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Rekson</p>
+                                    <p class="team-country">Defense</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">00:58:00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder"><span class="highlight">6</span> / <span class="highlight">2</span></p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">2.86</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">79.71%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">21.56%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">12.422</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+            <!-- TABLE -->
+            <div class="table lineups most-played">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header big bordered colored">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero / Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Time Played</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Record</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Medals</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">On Fire</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item padded-big">
+                        <p class="table-row-header-title">Damage</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row big">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap medium">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap violet">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/04.png" alt="character-04">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Vanstus</p>
+                                    <p class="team-country">Tank</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">00:42:00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder"><span class="highlight">1</span> / <span class="highlight">0</span></p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">3.00</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">92.58%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">48.05%</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <p class="table-text bolder">15.765</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+        </div>
+        <!-- /WIDGET ITEM -->
+        <!-- WIDGET ITEM -->
+        <div class="widget-item">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet small-space">
+                <h2 class="section-title medium">Records &amp; Awards</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- TABLE -->
+            <div class="table records">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Record/Award</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Description</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Date Awarded</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows">
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/flag-record-icon.png" alt="record-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Most damage inflicted</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info small">
+                                <!-- HEXAGON -->
+                                <div class="featured-info-img hexagon hexagon-wrap small light">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Inflicted 98.256 of damage in a single game. Hero: Galium</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">March 2019</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/cup-award-icon.png" alt="award-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Player of the year 2018</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">Awarded by the Xenowatch League organizers</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">November 2018</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/flag-record-icon.png" alt="record-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Fastest kill in league</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info small">
+                                <!-- HEXAGON -->
+                                <div class="featured-info-img hexagon hexagon-wrap small light">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/04.png" alt="character-04">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Killed an opponent 0.23 secs after the start. Hero: Vanstus</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">August 2018</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/flag-record-icon.png" alt="record-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Highest healing in world cup</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info small">
+                                <!-- HEXAGON -->
+                                <div class="featured-info-img hexagon hexagon-wrap small light">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/10.png" alt="character-10">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">42.125 healing done in a single game. Hero: Magina</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">February 2018</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/cup-award-icon.png" alt="award-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Player of the year 2014</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">Awarded by the Xenowatch Tournament founders</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">October 2014</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info">
+                                <!-- FEATURED INFO IMG -->
+                                <img class="featured-info-img" src="~/Content/img/icons/flag-record-icon.png" alt="record-img">
+                                <!-- /FEATURED INFO IMG -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">Highest eliminations</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <!-- FEATURED INFO -->
+                            <div class="featured-info small">
+                                <!-- HEXAGON -->
+                                <div class="featured-info-img hexagon hexagon-wrap small light">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- FEATURED INFO IMG -->
+                                <p class="featured-info-text">43 eliminations in a single life. Hero: Galium</p>
+                                <!-- /FEATURED INFO IMG -->
+                            </div>
+                            <!-- /FEATURED INFO -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item left">
+                            <p class="table-text bold">June 2014</p>
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+        </div>
+        <!-- /WIDGET ITEM -->
+    </div>
+    <!-- /LAYOUT BODY -->
+    <!-- LAYOUT SIDEBAR -->
+    <div class="layout-sidebar layout-item gutter-medium">
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet small-space">
+                <h2 class="section-title medium">Latest Match</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- WIDGET MATCH BOX -->
+            <div class="widget-match-box">
+                <!-- WIDGET TITLE WRAP -->
+                <div class="widget-title-wrap">
+                    <h6 class="widget-title">Xenowatch league finals</h6>
+                    <p class="widget-text">August 28th, 2018</p>
+                </div>
+                <!-- /WIDGET TITLE WRAP -->
+                <!-- WIDGET TEAM VS -->
+                <div class="widget-team-vs">
+                    <!-- WIDGET TEAM VS ITEM -->
+                    <div class="widget-team-vs-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap medium">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">The Lone Wolves</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">United States</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- TEAM SCORE -->
+                        <p class="team-score">12</p>
+                        <!-- /TEAM SCORE -->
+                    </div>
+                    <!-- /WIDGET TEAM VS ITEM -->
+                    <!-- WIDGET TEAM VS ITEM -->
+                    <div class="widget-team-vs-item">
+                        <!-- TEAM INFO WRAP -->
+                        <div class="team-info-wrap medium">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo" src="~/Content/img/teams/logos/02.png" alt="logo-02">
+                            <!-- /TEAM LOGO -->
+                            <!-- TEAM INFO -->
+                            <div class="team-info">
+                                <!-- TEAM NAME -->
+                                <p class="team-name">Raging Rhinos</p>
+                                <!-- /TEAM NAME -->
+                                <!-- TEAM COUNTRY -->
+                                <p class="team-country">South Africa</p>
+                                <!-- /TEAM COUNTRY -->
+                            </div>
+                            <!-- /TEAM INFO -->
+                        </div>
+                        <!-- /TEAM INFO WRAP -->
+                        <!-- TEAM SCORE -->
+                        <p class="team-score">10</p>
+                        <!-- /TEAM SCORE -->
+                    </div>
+                    <!-- /WIDGET TEAM VS ITEM -->
+                </div>
+                <!-- /WIDGET TEAM VS -->
+            </div>
+            <!-- /WIDGET MATCH BOX -->
+            <!-- WIDGET MATCH BOX -->
+            <div class="widget-match-box">
+                <!-- WIDGET SIMPLE STATS -->
+                <div class="widget-simple-stats v2 small">
+                    <!-- WIDGET SIMPLE STAT -->
+                    <div class="widget-simple-stat">
+                        <!-- WIDGET SIMPLE STAT HEADER -->
+                        <div class="widget-simple-stat-header">
+                            <p class="widget-simple-stat-header-title">Davikinger90 Stats</p>
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT HEADER -->
+                        <!-- WIDGET SIMPLE STAT ROWS -->
+                        <div class="widget-simple-stat-rows">
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Inflicted</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">56.364</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Damage Received</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">38.204</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Eliminations</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">47</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Deaths</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">9</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Team Damage</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- WIDGET SIMPLE STAT VALUE -->
+                                <p class="widget-simple-stat-value">43%</p>
+                                <!-- /WIDGET SIMPLE STAT VALUE -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                            <!-- WIDGET SIMPLE STAT ROW -->
+                            <div class="widget-simple-stat-row">
+                                <!-- WIDGET SIMPLE STAT TITLE -->
+                                <p class="widget-simple-stat-title">Most Played Hero</p>
+                                <!-- /WIDGET SIMPLE STAT TITLE -->
+                                <!-- TEAM INFO WRAP -->
+                                <div class="team-info-wrap small inverted">
+                                    <!-- HEXAGON -->
+                                    <div class="hexagon hexagon-wrap small light">
+                                        <!-- HEXAGON IN1 -->
+                                        <div class="hexagon-in1">
+                                            <!-- HEXAGON IN2 -->
+                                            <div class="hexagon-in2 hexagon-wrap">
+                                                <!-- HEXAGON -->
+                                                <div class="hexagon inner-hexagon">
+                                                    <!-- HEXAGON IN1 -->
+                                                    <div class="hexagon-in1">
+                                                        <!-- HEXAGON IN2 -->
+                                                        <div class="hexagon-in2 hexagon-area liquid">
+                                                            <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                        </div>
+                                                        <!-- HEXAGON IN2 -->
+                                                    </div>
+                                                    <!-- /HEXAGON IN1 -->
+                                                </div>
+                                                <!-- /HEXAGON -->
+                                            </div>
+                                            <!-- HEXAGON IN2 -->
+                                        </div>
+                                        <!-- /HEXAGON IN1 -->
+                                    </div>
+                                    <!-- /HEXAGON -->
+                                </div>
+                                <!-- /TEAM INFO WRAP -->
+                            </div>
+                            <!-- /WIDGET SIMPLE STAT ROW -->
+                        </div>
+                        <!-- /WIDGET SIMPLE STAT ROWS -->
+                    </div>
+                    <!-- /WIDGET SIMPLE STAT -->
+                </div>
+                <!-- /WIDGET SIMPLE STATS -->
+            </div>
+            <!-- /WIDGET MATCH BOX -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet">
+                <h2 class="section-title medium">Medals Awarded</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- WIDGET MEDALS -->
+            <div class="widget-medals multiple-items">
+                <!-- WIDGET MEDALS IMG -->
+                <img class="widget-medals-img" src="~/Content/img/teams/awards/medal-all.png" alt="medal-all">
+                <!-- /WIDGET MEDALS IMG -->
+                <!-- WIDGET MEDALS INFO -->
+                <div class="widget-medals-info">
+                    <!-- WIDGET MEDALS TITLE -->
+                    <p class="widget-medals-title">447</p>
+                    <!-- /WIDGET MEDALS TITLE -->
+                    <!-- WIDGET MEDALS TEXT -->
+                    <p class="widget-medals-text">Total medals</p>
+                    <!-- /WIDGET MEDALS TEXT -->
+                </div>
+                <!-- /WIDGET MEDALS INFO -->
+                <!-- WIDGET MEDALS INFO -->
+                <div class="widget-medals-info">
+                    <!-- WIDGET MEDALS TITLE -->
+                    <p class="widget-medals-title">3.15</p>
+                    <!-- /WIDGET MEDALS TITLE -->
+                    <!-- WIDGET MEDALS TEXT -->
+                    <p class="widget-medals-text">Average</p>
+                    <!-- /WIDGET MEDALS TEXT -->
+                </div>
+                <!-- /WIDGET MEDALS INFO -->
+            </div>
+            <!-- /WIDGET MEDALS -->
+            <!-- WIDGET MEDALS -->
+            <div class="widget-medals">
+                <!-- MEDAL LIST -->
+                <div class="medal-list">
+                    <!-- MEDAL LIST ITEM -->
+                    <div class="medal-list-item">
+                        <!-- MEDAL LIST ITEM IMG -->
+                        <img class="medal-list-item-img" src="~/Content/img/teams/awards/medal-gold-big.png" alt="medal-gold">
+                        <!-- /MEDAL LIST ITEM IMG -->
+                        <!-- MEDAL LIST ITEM INFO -->
+                        <div class="medal-list-item-info">
+                            <!-- MEDAL LIST ITEM TITLE -->
+                            <p class="medal-list-item-title">228</p>
+                            <!-- /MEDAL LIST ITEM TITLE -->
+                            <!-- MEDAL LIST ITEM TEXT -->
+                            <p class="medal-list-item-text">1.61 avg</p>
+                            <!-- /MEDAL LIST ITEM TEXT -->
+                        </div>
+                        <!-- /MEDAL LIST ITEM INFO -->
+                    </div>
+                    <!-- /MEDAL LIST ITEM -->
+                    <!-- MEDAL LIST ITEM -->
+                    <div class="medal-list-item">
+                        <!-- MEDAL LIST ITEM IMG -->
+                        <img class="medal-list-item-img" src="~/Content/img/teams/awards/medal-silver-big.png" alt="medal-silver">
+                        <!-- /MEDAL LIST ITEM IMG -->
+                        <!-- MEDAL LIST ITEM INFO -->
+                        <div class="medal-list-item-info">
+                            <!-- MEDAL LIST ITEM TITLE -->
+                            <p class="medal-list-item-title">115</p>
+                            <!-- /MEDAL LIST ITEM TITLE -->
+                            <!-- MEDAL LIST ITEM TEXT -->
+                            <p class="medal-list-item-text">0.81 avg</p>
+                            <!-- /MEDAL LIST ITEM TEXT -->
+                        </div>
+                        <!-- /MEDAL LIST ITEM INFO -->
+                    </div>
+                    <!-- /MEDAL LIST ITEM -->
+                    <!-- MEDAL LIST ITEM -->
+                    <div class="medal-list-item">
+                        <!-- MEDAL LIST ITEM IMG -->
+                        <img class="medal-list-item-img" src="~/Content/img/teams/awards/medal-bronze-big.png" alt="medal-bronze">
+                        <!-- /MEDAL LIST ITEM IMG -->
+                        <!-- MEDAL LIST ITEM INFO -->
+                        <div class="medal-list-item-info">
+                            <!-- MEDAL LIST ITEM TITLE -->
+                            <p class="medal-list-item-title">104</p>
+                            <!-- /MEDAL LIST ITEM TITLE -->
+                            <!-- MEDAL LIST ITEM TEXT -->
+                            <p class="medal-list-item-text">0.73 avg</p>
+                            <!-- /MEDAL LIST ITEM TEXT -->
+                        </div>
+                        <!-- /MEDAL LIST ITEM INFO -->
+                    </div>
+                    <!-- /MEDAL LIST ITEM -->
+                </div>
+                <!-- /MEDAL LIST -->
+            </div>
+            <!-- /WIDGET MEDALS -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet">
+                <h2 class="section-title medium">Team Bio</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- BIO ITEMS -->
+            <div class="bio-items">
+                <!-- BIO ITEM -->
+                <div class="bio-item">
+                    <!-- BIO ITEM TITLE -->
+                    <p class="bio-item-title">Founding The Lone Wolves</p>
+                    <!-- /BIO ITEM TITLE -->
+                    <!-- BIO ITEM TEXT -->
+                    <p class="bio-item-text">Lorem ipsum dolor sit amet, consectetur bere adipisicing elit, sed do eiusmod tempor lorem incididunt ut labore et dolore magna. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo en der lorem ipsum dolorem.</p>
+                    <!-- /BIO ITEM TEXT -->
+                </div>
+                <!-- /BIO ITEM -->
+            </div>
+            <!-- /BIO ITEMS -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+        <!-- WIDGET SIDEBAR -->
+        <div class="widget-sidebar">
+            <!-- SECTION TITLE WRAP -->
+            <div class="section-title-wrap violet small-space">
+                <h2 class="section-title medium">Heroes Win Rate</h2>
+                <div class="section-title-separator"></div>
+            </div>
+            <!-- /SECTION TITLE WRAP -->
+            <!-- TABLE -->
+            <div class="table champion-rates">
+                <!-- TABLE ROW HEADER -->
+                <div class="table-row-header">
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item left">
+                        <p class="table-row-header-title">Hero/Role</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                    <!-- TABLE ROW HEADER ITEM -->
+                    <div class="table-row-header-item">
+                        <p class="table-row-header-title">Win Rate</p>
+                    </div>
+                    <!-- /TABLE ROW HEADER ITEM -->
+                </div>
+                <!-- /TABLE ROW HEADER -->
+                <!-- TABLE ROWS -->
+                <div class="table-rows no-color">
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap small violet">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/04.png" alt="character-04">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Vanstus</p>
+                                    <p class="team-country">TANK</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- PROGRESS BAR -->
+                            <div id="t-cr-pgb-01" class="progress-bar link-left"></div>
+                            <!-- /PROGRESS BAR -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap small red">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/05.png" alt="character-05">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Galium</p>
+                                    <p class="team-country">OFFENSE</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- PROGRESS BAR -->
+                            <div id="t-cr-pgb-02" class="progress-bar link-left"></div>
+                            <!-- /PROGRESS BAR -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap small blue">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/07.png" alt="character-07">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Rekson</p>
+                                    <p class="team-country">DEFENSE</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- PROGRESS BAR -->
+                            <div id="t-cr-pgb-03" class="progress-bar link-left"></div>
+                            <!-- /PROGRESS BAR -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap small cyan">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/10.png" alt="character-10">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Magina</p>
+                                    <p class="team-country">SUPPORT</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- PROGRESS BAR -->
+                            <div id="t-cr-pgb-04" class="progress-bar link-left"></div>
+                            <!-- /PROGRESS BAR -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                    <!-- TABLE ROW -->
+                    <div class="table-row">
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- TEAM INFO WRAP -->
+                            <div class="team-info-wrap">
+                                <!-- HEXAGON -->
+                                <div class="hexagon hexagon-wrap small cyan">
+                                    <!-- HEXAGON IN1 -->
+                                    <div class="hexagon-in1">
+                                        <!-- HEXAGON IN2 -->
+                                        <div class="hexagon-in2 hexagon-wrap">
+                                            <!-- HEXAGON -->
+                                            <div class="hexagon inner-hexagon">
+                                                <!-- HEXAGON IN1 -->
+                                                <div class="hexagon-in1">
+                                                    <!-- HEXAGON IN2 -->
+                                                    <div class="hexagon-in2 hexagon-area liquid">
+                                                        <img src="~/Content/img/characters/12.png" alt="character-12">
+                                                    </div>
+                                                    <!-- HEXAGON IN2 -->
+                                                </div>
+                                                <!-- /HEXAGON IN1 -->
+                                            </div>
+                                            <!-- /HEXAGON -->
+                                        </div>
+                                        <!-- HEXAGON IN2 -->
+                                    </div>
+                                    <!-- /HEXAGON IN1 -->
+                                </div>
+                                <!-- /HEXAGON -->
+                                <!-- TEAM INFO -->
+                                <div class="team-info">
+                                    <p class="team-name">Duvida</p>
+                                    <p class="team-country">SUPPORT</p>
+                                </div>
+                                <!-- /TEAM INFO -->
+                            </div>
+                            <!-- /TEAM INFO WRAP -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                        <!-- TABLE ROW ITEM -->
+                        <div class="table-row-item">
+                            <!-- PROGRESS BAR -->
+                            <div id="t-cr-pgb-05" class="progress-bar link-left"></div>
+                            <!-- /PROGRESS BAR -->
+                        </div>
+                        <!-- /TABLE ROW ITEM -->
+                    </div>
+                    <!-- /TABLE ROW -->
+                </div>
+                <!-- /TABLE ROWS -->
+            </div>
+            <!-- /TABLE -->
+        </div>
+        <!-- /WIDGET SIDEBAR -->
+    </div>
+    <!-- /LAYOUT SIDEBAR -->
+</div>
+<!-- LAYOUT CONTENT 1 -->

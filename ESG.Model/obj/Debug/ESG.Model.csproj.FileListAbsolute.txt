@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\esg\ESG.Model\bin\Debug\ESG.Model.dll
+C:\Users\User\source\repos\esg\ESG.Model\bin\Debug\ESG.Model.pdb
+C:\Users\User\source\repos\esg\ESG.Model\obj\Debug\ESG.Model.csprojAssemblyReference.cache
+C:\Users\User\source\repos\esg\ESG.Model\obj\Debug\ESG.Model.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\esg\ESG.Model\obj\Debug\ESG.Model.dll
+C:\Users\User\source\repos\esg\ESG.Model\obj\Debug\ESG.Model.pdb

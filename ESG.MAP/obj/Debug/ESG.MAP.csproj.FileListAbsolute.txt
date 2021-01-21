@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\ESG.MAP.dll.config
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\ESG.MAP.dll
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\ESG.MAP.pdb
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\ESG.Model.dll
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\ESG.Model.pdb
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\esg\ESG.MAP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\esg\ESG.MAP\obj\Debug\ESG.MAP.csprojAssemblyReference.cache
+C:\Users\User\source\repos\esg\ESG.MAP\obj\Debug\ESG.MAP.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\esg\ESG.MAP\obj\Debug\ESG.MAP.csproj.CopyComplete
+C:\Users\User\source\repos\esg\ESG.MAP\obj\Debug\ESG.MAP.dll
+C:\Users\User\source\repos\esg\ESG.MAP\obj\Debug\ESG.MAP.pdb

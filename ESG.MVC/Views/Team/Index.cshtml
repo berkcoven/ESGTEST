@@ -1,0 +1,332 @@
+﻿@model ESG.Model.Entities.Team
+@{
+    ViewBag.Title = "Index";
+}
+    <div class="banner-wrap e-sport">
+        <!-- BANNER -->
+        <div class="banner grid-limit">
+            <h2 class="banner-title">The Lone Wolves</h2>
+            <p class="banner-sections">
+                <span class="banner-section">eSports</span>
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon">
+                    <use xlink:href="#svg-arrow"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+                <span class="banner-section">Teams</span>
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon">
+                    <use xlink:href="#svg-arrow"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+                <span class="banner-section">@Model.TeamName</span>
+            </p>
+        </div>
+        <!-- /BANNER -->
+    </div>
+<!-- LIVE NEWS WIDGET WRAP -->
+<div class="live-news-widget-wrap">
+    <!-- LIVE NEWS WIDGET -->
+    <div class="live-news-widget grid-limit">
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs left red">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET STAIRS -->
+        <div class="live-news-widget-stairs right blue">
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+            <div class="live-news-widget-stair"></div>
+        </div>
+        <!-- /LIVE NEWS WIDGET STAIRS -->
+        <!-- LIVE NEWS WIDGET TITLE WRAP -->
+        <div class="live-news-widget-title-wrap">
+            <img class="live-news-widget-icon" src="~/Content/img/icons/live-news-icon.png" alt="live-news-icon">
+            <p class="live-news-widget-title">Live News</p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TITLE WRAP -->
+        <!-- LIVE NEWS WIDGET TEXT WRAP -->
+        <div id="lineslide-wrap1" class="live-news-widget-text-wrap">
+            <p class="live-news-widget-text"></p>
+        </div>
+        <!-- /LIVE NEWS WIDGET TEXT WRAP -->
+    </div>
+    <!-- /LIVE NEWS WIDGET -->
+</div>
+<!-- /LIVE NEWS WIDGET WRAP -->
+<!-- CAROUSEL MATCH RESULT WRAP -->
+
+<!-- /CAROUSEL MATCH RESULT WRAP -->
+<!-- LAYOUT CONTENT FULL -->
+<div class="layout-content-full v2 grid-limit layout-item gutter-big">
+    <!-- WIDGET ITEM -->
+    <div class="widget-item">
+        <!-- SECTION TITLE WRAP -->
+        <div class="section-title-wrap violet no-space">
+            <h2 class="section-title medium">Team Overview</h2>
+            <div class="section-title-separator"></div>
+        </div>
+        <!-- /SECTION TITLE WRAP -->
+        <!-- TAB WRAP -->
+        <div class="tab-wrap">
+            <!-- TAB BODY -->
+            <div class="tab-body">
+                <!-- TAB ITEM -->
+                <div class="tab-item">
+                    <!-- WIDGET TEAM OVERVIEW -->
+                    <div class="widget-team-overview">
+                        <!-- TEAM OVERVIEW -->
+                        <div class="team-overview">
+                            <!-- TEAM LOGO -->
+                            <img class="team-logo big" src="~/Content/img/teams/logos/01.png" alt="logo-01">
+                            <!-- /TEAM LOGO -->
+                            <!-- OVERVIEW INFO WRAP -->
+                            <div class="overview-info-wrap">
+                                <!-- OVERVIEW INFO -->
+                                <div class="overview-info">
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Name</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">@Model.TeamName</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Team Tag</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">
+                                            @Model.TeamTag
+                                        </p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Established</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">March 2007</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                </div>
+                                <!-- /OVERVIEW INFO -->
+                                <!-- OVERVIEW INFO -->
+                                <div class="overview-info">
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Games Played</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">156 games</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Games Won</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">131 Victories</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Games Lost</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">25 Losses</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                </div>
+                                <!-- /OVERVIEW INFO -->
+                                <!-- OVERVIEW INFO -->
+                                <div class="overview-info">
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Tournaments</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">24</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">First Places</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">4</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                    <!-- OVERVIEW INFO ITEM -->
+                                    <div class="overview-info-item">
+                                        <!-- OVERVIEW INFO ITEM TITLE -->
+                                        <p class="overview-info-item-title">Prize Earned</p>
+                                        <!-- /OVERVIEW INFO ITEM TITLE -->
+                                        <!-- OVERVIEW INFO ITEM TEXT -->
+                                        <p class="overview-info-item-text">U$D 912.804</p>
+                                        <!-- /OVERVIEW INFO ITEM TEXT -->
+                                    </div>
+                                    <!-- /OVERVIEW INFO ITEM -->
+                                </div>
+                                <!-- /OVERVIEW INFO -->
+                            </div>
+                            <!-- /OVERVIEW INFO WRAP -->
+                            <!-- ARC RATE WRAP -->
+                            <!-- /ARC RATE WRAP -->
+                        </div>
+                        <!-- /TEAM OVERVIEW -->
+                    </div>
+                    <!-- /WIDGET TEAM OVERVIEW -->
+                </div>
+                <!-- /TAB ITEM -->
+            </div>
+            <!-- /TAB BODY -->
+            <!-- TAB HEADER -->
+            <!-- /TAB HEADER -->
+        </div>
+        <!-- /TAB WRAP -->
+    </div>
+    <!-- /WIDGET ITEM -->
+
+    @if (Model.TeamLeader == Session["login"])
+    {
+        <a href="@Url.Action("Userlist", "User")" class="button big blue">
+
+            Oyuncu Davet
+            <!-- BUTTON ORNAMENT -->
+            <div class="button-ornament">
+                <!-- ARROW ICON -->
+                <svg class="arrow-icon big">
+                    <use xlink:href="#svg-arrow-big"></use>
+                </svg>
+                <!-- /ARROW ICON -->
+                <!-- CROSS ICON -->
+                <svg class="cross-icon big">
+                    <use xlink:href="#svg-cross-big"></use>
+                </svg>
+                <!-- /CROSS ICON -->
+            </div>
+            <!-- /BUTTON ORNAMENT -->
+        </a>
+
+
+    }
+
+
+    <!-- WIDGET ITEM -->
+    <div class="widget-item">
+        <!-- SECTION TITLE WRAP -->
+        <div class="section-title-wrap violet">
+            <h2 class="section-title medium">Team Roster</h2>
+            <div class="section-title-separator"></div>
+        </div>
+        <!-- /SECTION TITLE WRAP -->
+        <!-- WIDGET PLAYER PREVIEW -->
+        <div class="widget-player-preview">
+
+
+            @foreach (var item in Model.TeamUsers)
+            {
+                <div class="player-preview">
+                    <!-- BUTTON MORE INFO -->
+                    <a href="esports-player.html" class="button-more-info">
+                        <!-- PLUS CC ICON -->
+                        <svg class="plus-cc-icon medium">
+                            <use xlink:href="#svg-plus-cc"></use>
+                        </svg>
+                        <!-- /PLUS CC ICON -->
+                    </a>
+                    <!-- /BUTTON MORE INFO -->
+                    <!-- PLAYER PREVIEW IMG WRAP -->
+                    <a href="esports-player.html">
+                        <div class="player-preview-img-wrap">
+                            <!-- PLAYER PREVIEW IMG -->
+                            <img class="player-preview-img" src="~/Content/img/teams/roster-player-01.png" alt="player-01">
+                            <!-- /PLAYER PREVIEW IMG -->
+                        </div>
+                    </a>
+                    <!-- /PLAYER PREVIEW IMG WRAP -->
+                    <!-- PLAYER PREVIEW INFO -->
+                    <div class="player-preview-info">
+                        <!-- PLAYER PREVIEW NICKNAME -->
+                        <p class="player-preview-nickname">@item.NickName</p>
+                        <!-- /PLAYER PREVIEW NICKNAME -->
+                        <!-- PLAYER PREVIEW NAME -->
+                        <p class="player-preview-name">@item.UserName</p>
+                        <!-- /PLAYER PREVIEW NAME -->
+                    </div>
+                    <!-- /PLAYER PREVIEW INFO -->
+                    <!-- SOCIAL LINKS -->
+                    <div class="social-links centered">
+                        <!-- BUBBLE ORNAMENT -->
+                        <a href="#" class="bubble-ornament fb">
+                            <!-- FACEBOOK ICON -->
+                            <svg class="facebook-icon">
+                                <use xlink:href="#svg-facebook"></use>
+                            </svg>
+                            <!-- /FACEBOOK ICON -->
+                        </a>
+                        <!-- /BUBBLE ORNAMENT -->
+                        <!-- BUBBLE ORNAMENT -->
+                        <a href="#" class="bubble-ornament twt">
+                            <!-- TWITTER ICON -->
+                            <svg class="twitter-icon">
+                                <use xlink:href="#svg-twitter"></use>
+                            </svg>
+                            <!-- /TWITTER ICON -->
+                        </a>
+                        <!-- /BUBBLE ORNAMENT -->
+                        <!-- BUBBLE ORNAMENT -->
+                        <a href="#" class="bubble-ornament twitch">
+                            <!-- TWITCH ICON -->
+                            <svg class="twitch-icon">
+                                <use xlink:href="#svg-twitch"></use>
+                            </svg>
+                            <!-- /TWITCH ICON -->
+                        </a>
+                        <!-- /BUBBLE ORNAMENT -->
+                    </div>
+                    <!-- /SOCIAL LINKS -->
+                </div>
+            }
+
+            <!-- /PLAYER PREVIEW -->
+        </div>
+        <!-- /WIDGET PLAYER PREVIEW -->
+    </div>
+    <!-- /WIDGET ITEM -->
+</div>
+<!-- /LAYOUT CONTENT FULL -->
+<!-- LAYOUT CONTENT 1 -->
+
+<!-- LAYOUT CONTENT 1 -->
